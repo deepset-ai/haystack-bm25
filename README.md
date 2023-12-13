@@ -1,10 +1,8 @@
 # Rank-BM25: A two line search engine
 
 [![Test](https://github.com/deepset-ai/rank_bm25/actions/workflows/test.yml/badge.svg)](https://github.com/deepset-ai/rank_bm25/actions/workflows/test.yml)
-[![PyPI version](https://badge.fury.io/py/rank-bm25.svg)](https://badge.fury.io/py/rank-bm25)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/rank_bm25)
-[![DOI](https://zenodo.org/badge/166720547.svg)](https://zenodo.org/badge/latestdoi/166720547)
-![PyPI - License](https://img.shields.io/pypi/l/rank_bm25)
+[![PyPI - Version](https://img.shields.io/pypi/v/haystack-bm25.svg)](https://pypi.org/project/haystack-bm25)
+[![GitHub](https://img.shields.io/github/license/deepset-ai/rank_bm25?color=blue)](LICENSE)
 
 A collection of algorithms for querying a set of documents and returning the ones most relevant to the query. The most common use case for these algorithms is, as you might have guessed, to create search engines.
 
