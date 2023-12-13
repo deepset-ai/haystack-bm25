@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "haystack-bm25"
+dynamic = ["version"]
+description = "Various BM25 algorithms for document ranking"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [
+    { name = "D. Brown", email = "dorianstuartbrown@gmail.com" },
+]
+dependencies = [
+    "numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/deepset-ai/rank_bm25"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/haystack_bm25",
+]
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"

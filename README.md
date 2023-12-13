@@ -1,6 +1,6 @@
 # Rank-BM25: A two line search engine
 
-![Build Status](https://github.com/dorianbrown/rank_bm25/workflows/pytest/badge.svg)
+[![Test](https://github.com/deepset-ai/rank_bm25/actions/workflows/test.yml/badge.svg)](https://github.com/deepset-ai/rank_bm25/actions/workflows/test.yml)
 [![PyPI version](https://badge.fury.io/py/rank-bm25.svg)](https://badge.fury.io/py/rank-bm25)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/rank_bm25)
 [![DOI](https://zenodo.org/badge/166720547.svg)](https://zenodo.org/badge/latestdoi/166720547)
@@ -13,9 +13,9 @@ So far the algorithms that have been implemented are:
 - [x] BM25L
 - [x] BM25+
 - [ ] BM25-Adpt
-- [ ] BM25T 
+- [ ] BM25T
 
-These algorithms were taken from [this paper](http://www.cs.otago.ac.nz/homepages/andrew/papers/2014-2.pdf), which gives a nice overview of each method, and also benchmarks them against each other. A nice inclusion is that they compare different kinds of preprocessing like stemming vs no-stemming, stopword removal or not, etc. Great read if you're new to the topic. 
+These algorithms were taken from [this paper](http://www.cs.otago.ac.nz/homepages/andrew/papers/2014-2.pdf), which gives a nice overview of each method, and also benchmarks them against each other. A nice inclusion is that they compare different kinds of preprocessing like stemming vs no-stemming, stopword removal or not, etc. Great read if you're new to the topic.
 
 ## Installation
 The easiest way to install this package is through `pip`, using
@@ -47,7 +47,7 @@ tokenized_corpus = [doc.split(" ") for doc in corpus]
 bm25 = BM25Okapi(tokenized_corpus)
 # <rank_bm25.BM25Okapi at 0x1047881d0>
 ```
-Note that this package doesn't do any text preprocessing. If you want to do things like lowercasing, stopword removal, stemming, etc, you need to do it yourself. 
+Note that this package doesn't do any text preprocessing. If you want to do things like lowercasing, stopword removal, stemming, etc, you need to do it yourself.
 
 The only requirements is that the class receives a list of lists of strings, which are the document tokens.
 

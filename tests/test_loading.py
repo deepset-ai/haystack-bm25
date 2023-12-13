@@ -1,23 +1,24 @@
 import sys
 import os
-myPath = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, myPath + '/../')
 
-from rank_bm25 import BM25Okapi, BM25L, BM25Plus
+myPath = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, myPath + "/../")
+
+from haystack_bm25.rank_bm25 import BM25Okapi, BM25L, BM25Plus
 import re
 
 
 corpus = [
     "Hello there good man!",
     "It is quite windy in London",
-    "How is the weather today?"
+    "How is the weather today?",
 ]
 tokenized_corpus = [doc.split(" ") for doc in corpus]
 
 algs = [
     BM25Okapi(tokenized_corpus),
     BM25L(tokenized_corpus),
-    BM25Plus(tokenized_corpus)
+    BM25Plus(tokenized_corpus),
 ]
 
 
