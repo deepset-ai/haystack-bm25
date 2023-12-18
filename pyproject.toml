@@ -7,7 +7,7 @@ name = "haystack-bm25"
 dynamic = ["version"]
 description = "Various BM25 algorithms for document ranking"
 readme = "README.md"
-license = "Apache-2.0"
+license = {text = "Apache-2.0"}
 authors = [
     { name = "D. Brown", email = "dorianstuartbrown@gmail.com" },
 ]
