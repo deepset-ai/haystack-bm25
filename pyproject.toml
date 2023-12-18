@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/deepset-ai/rank_bm25"
+Homepage = "https://github.com/deepset-ai/haystack-bm25"
 
 [tool.hatch.version]
 source = "vcs"
