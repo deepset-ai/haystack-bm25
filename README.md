@@ -1,5 +1,6 @@
 # Rank-BM25: A two line search engine
 
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/haystack-bm25/badges/version.svg)](https://anaconda.org/conda-forge/haystack-bm25)
 [![Test](https://github.com/deepset-ai/rank_bm25/actions/workflows/test.yml/badge.svg)](https://github.com/deepset-ai/rank_bm25/actions/workflows/test.yml)
 [![PyPI - Version](https://img.shields.io/pypi/v/haystack-bm25.svg)](https://pypi.org/project/haystack-bm25)
 [![GitHub](https://img.shields.io/github/license/deepset-ai/rank_bm25?color=blue)](LICENSE)
